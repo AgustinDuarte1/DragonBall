@@ -4,7 +4,7 @@ import {consultar} from "./api/api.js"
 import { Tarjeta } from './components/Tarjeta.jsx';
 import dragonballogo from './image.png'
 
-function App () {giy
+function App () {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filtro, setFiltro] = useState("");
