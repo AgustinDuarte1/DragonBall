@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import { Contendor } from "./components/Contenedor"
+import Contendor from "./components/Contenedor"
 import {consultar} from "./api/api.js"
 import { Tarjeta } from './components/Tarjeta.jsx';
 import dragonballogo from './image.png'
