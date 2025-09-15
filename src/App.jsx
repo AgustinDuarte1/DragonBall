@@ -4,13 +4,14 @@ import {consultar} from "./api/api.js"
 import { Tarjeta } from './components/Tarjeta.jsx';
 import dragonballogo from './image.png'
 
-function App () {
+function App () {giy
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [filtro, setFiltro] = useState("");
 
   useEffect(() =>{
     async function cargar(){
+    setLoading(true);
     const i = await consultar()
     setItems(i);
     setLoading(false);
@@ -36,7 +37,7 @@ function App () {
         <img 
           src={dragonballogo}
           alt="Dragon Ball Logo" 
-          className="w-120 mx-auto my-2"
+          className="w-48 mx-auto my-2"
             />
         {/* Input filtro */}
         <div className="flex justify-center mb-6">
