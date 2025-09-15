@@ -1,4 +1,4 @@
 
 export default function Contendor ({children}) {
-    return <div className="flex w-[660] flex-wrap gap-1 justify-center">{children}</div>
+    return <div className="-full max-w-6xl mx-auto flex flex-wrap gap-6 justify-center">{children}</div>
 }
